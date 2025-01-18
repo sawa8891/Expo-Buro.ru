@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expo-Buro</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            text-align: center;
+            padding: 50px;
+            background-color: #333;
+            color: white;
+        }
+        header img {
+            width: 300px;
+        }
+        nav {
+            text-align: center;
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 10px;
+        }
+        .gallery img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            margin-top: 20px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 600px;
+            margin: auto;
+        }
+        form input, form textarea, form button {
+            margin: 10px 0;
+            padding: 10px;
+            font-size: 16px;
+        }
+        form button {
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        form button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="img/logo.png" alt="Expo-Buro Logo">
+    </header>
+    <nav>
+        <a href="#about">О нас</a>
+        <a href="#gallery">Галерея</a>
+        <a href="#contact">Контакты</a>
+    </nav>
+    <section id="about">
+        <h2>О нас</h2>
+        <p>Мы специализируемся на проектировании и строительстве выставочных стендов, которые привлекают внимание и подчёркивают уникальность вашего бренда.</p>
+        <p>С нами ваш стенд станет настоящей визитной карточкой на любой выставке.</p>
+    </section>
+    <section id="gallery">
+        <h2>Галерея наших работ</h2>
+        <div class="gallery">
+            <img src="img/example1.jpg" alt="Example Project 1">
+            <img src="img/example2.jpg" alt="Example Project 2">
+            <img src="img/example3.jpg" alt="Example Project 3">
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Свяжитесь с нами</h2>
+        <form action="submit_form.php" method="POST">
+            <input type="text" name="name" placeholder="Ваше имя" required>
+            <input type="email" name="email" placeholder="Ваш Email" required>
+            <textarea name="message" rows="5" placeholder="Ваше сообщение" required></textarea>
+            <button type="submit">Отправить</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2025 Expo-Buro. Все права защищены.</p>
+    </footer>
+</body>
+</html>
